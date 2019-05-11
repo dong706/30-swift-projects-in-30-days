@@ -9,6 +9,8 @@
 import UIKit
 import SnapKit
 
+var isSystemFont:Bool = true;
+
 class ViewController: UIViewController {
     let label = UILabel()
 
@@ -24,9 +26,9 @@ class ViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 30)
         
         let changeBtn = UIButton(type: .custom)
-        changeBtn.setTitle("Change Font Family", for: UIControlState.normal)
-        changeBtn.addTarget(self, action: #selector(changeFontFamily), for: UIControlEvents.touchUpInside)
-        changeBtn.setTitleColor(UIColor.blue, for: UIControlState.normal)
+        changeBtn.setTitle("Change Font Family", for: UIControl.State.normal)
+        changeBtn.addTarget(self, action: #selector(changeFontFamily), for: UIControl.Event.touchUpInside)
+        changeBtn.setTitleColor(UIColor.blue, for: UIControl.State.normal)
         self.view.addSubview(changeBtn)
         changeBtn.layer.borderColor = UIColor.blue.cgColor
         changeBtn.layer.borderWidth = 1
@@ -45,7 +47,14 @@ class ViewController: UIViewController {
     }
 
     @objc func changeFontFamily() {
-        label.font = UIFont(name: "Savoye LET", size: 30)
+        if isSystemFont {
+            label.font = UIFont(name: "Savoye LET", size: 30)
+            isSystemFont = false
+        }else{
+            label.font = UIFont.systemFont(ofSize: 30)
+            isSystemFont = true
+        }
+        
     }
     
     func printAllSupportedFontNames() {
