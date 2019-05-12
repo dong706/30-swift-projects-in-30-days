@@ -33,10 +33,12 @@ class ViewController: UIViewController {
         changeBtn.layer.borderColor = UIColor.blue.cgColor
         changeBtn.layer.borderWidth = 1
         changeBtn.layer.cornerRadius = 5
+        
         changeBtn.snp.makeConstraints { (make) in
             make.top.equalTo(500)
-            make.centerX.equalTo(self.view)
-            make.width.equalTo(200)
+            make.centerX.equalTo(self.view) //设置居中
+            make.width.equalTo(200) //设置宽度
+            make.height.equalTo(50) //设置高度
         }
         printAllSupportedFontNames()
     }
