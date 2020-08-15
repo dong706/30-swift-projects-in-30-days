@@ -30,8 +30,8 @@ class LoginViewController: UIViewController {
         self.view.addSubview(pswInputField)
         
         let loginButton = UIButton(frame: CGRect(x: -125, y: 160, width: 125, height: 40))
-        loginButton.setTitle("Login", for: UIControlState.normal)
-        loginButton.setTitleColor(UIColor.white, for: UIControlState.normal)
+        loginButton.setTitle("Login", for: UIControl.State.normal)
+        loginButton.setTitleColor(UIColor.white, for: UIControl.State.normal)
         loginButton.backgroundColor = UIColor(red: 22/255.0, green: 139/255.0, blue: 3/255.0, alpha: 1)
         self.view.addSubview(loginButton)
         

@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         startView.backgroundColor = UIColor.init(red: 1, green: 101/255.0, blue: 27/255.0, alpha: 1)
         self.view.addSubview(startView)
         startView.snp.makeConstraints { (make) in
-            make.top.equalTo(self.view).offset(400)
+            make.top.equalTo(self.view).offset(300)
             make.left.equalTo(self.view).offset(0)
             make.bottom.equalTo(self.view).offset(0)
             make.width.equalTo(self.view.frame.width / 2)
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         endView.backgroundColor = UIColor.init(red: 98/255.0, green: 242/255.0, blue: 23/255.0, alpha: 1)
         self.view.addSubview(endView)
         endView.snp.makeConstraints { (make) in
-            make.top.equalTo(self.view).offset(400)
+            make.top.equalTo(self.view).offset(300)
             make.right.equalTo(self.view).offset(0)
             make.width.equalTo(self.view.frame.width / 2)
             make.bottom.equalTo(self.view).offset(0)

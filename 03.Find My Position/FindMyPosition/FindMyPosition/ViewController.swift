@@ -40,9 +40,9 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         
         let findMyLocationBtn = UIButton(type: .custom)
         findMyLocationBtn.frame = CGRect(x: 50, y: self.view.bounds.height - 80, width: self.view.bounds.width - 100, height: 50)
-        findMyLocationBtn.setTitle("Find My Position", for: UIControlState.normal)
-        findMyLocationBtn.setTitleColor(UIColor.white, for: UIControlState.normal)
-        findMyLocationBtn.addTarget(self, action: #selector(findMyLocation), for: UIControlEvents.touchUpInside)
+        findMyLocationBtn.setTitle("Find My Position", for: UIControl.State.normal)
+        findMyLocationBtn.setTitleColor(UIColor.white, for: UIControl.State.normal)
+        findMyLocationBtn.addTarget(self, action: #selector(findMyLocation), for: UIControl.Event.touchUpInside)
         self.view.addSubview(findMyLocationBtn)
     }
 
@@ -80,6 +80,8 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
                 let finalAddress = "\(street),\(city),\(country)"
                 self.locationStrLabel.text = finalAddress
 
+            }else{
+                print(error!)
             }
         }
     }

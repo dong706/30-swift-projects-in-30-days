@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1821564D229044F7009BD2D3 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821564C229044F7009BD2D3 /* TestController.swift */; };
 		3B09C8A41EA242E500A9527F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B09C8A31EA242E500A9527F /* AppDelegate.swift */; };
 		3B09C8A61EA242E500A9527F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B09C8A51EA242E500A9527F /* ViewController.swift */; };
 		3B09C8A91EA242E500A9527F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B09C8A71EA242E500A9527F /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1821564C229044F7009BD2D3 /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
 		3B09C8A01EA242E500A9527F /* FindMyPosition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyPosition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B09C8A31EA242E500A9527F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B09C8A51EA242E500A9527F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				3B09C8AA1EA242E500A9527F /* Assets.xcassets */,
 				3B09C8AC1EA242E500A9527F /* LaunchScreen.storyboard */,
 				3B09C8AF1EA242E500A9527F /* Info.plist */,
+				1821564C229044F7009BD2D3 /* TestController.swift */,
 			);
 			path = FindMyPosition;
 			sourceTree = "<group>";
@@ -108,6 +111,8 @@
 				TargetAttributes = {
 					3B09C89F1EA242E500A9527F = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = AX7K4AF3LK;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -117,6 +122,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -148,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1821564D229044F7009BD2D3 /* TestController.swift in Sources */,
 				3B09C8A61EA242E500A9527F /* ViewController.swift in Sources */,
 				3B09C8A41EA242E500A9527F /* AppDelegate.swift in Sources */,
 			);
@@ -272,12 +279,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AX7K4AF3LK;
 				INFOPLIST_FILE = FindMyPosition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nimoAndHisFriends.FindMyPosition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -285,12 +292,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AX7K4AF3LK;
 				INFOPLIST_FILE = FindMyPosition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nimoAndHisFriends.FindMyPosition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
